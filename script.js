@@ -4,7 +4,7 @@ btnAction.addEventListener("click", getDataForm)
 
 async function getDataAPI(username, password) {
     var xmlHttp = new XMLHttpRequest();
-    xmlHttp.open(await "GET", `https://painel.fstream.tk/extension?username=${username}&senha=${password}`, false); // false for synchronous request
+    xmlHttp.open(await "GET", `https://painel.fstream.cloud/extension?username=${username}&senha=${password}`, false); // false for synchronous request
     xmlHttp.send(null);
 
     return result = { status: xmlHttp.status, msg: xmlHttp.responseText };
